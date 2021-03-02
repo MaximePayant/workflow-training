@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Compile
         run: make
       - name: Execute
@@ -27,6 +27,8 @@ jobs:
   unit_test:
     name: Unit Test
     runs-on: ubuntu-latest
+    container:
+      image: epitechcontent/epitest-docker
 
     steps:
       - uses: actions/checkout@v2
