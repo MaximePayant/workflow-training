@@ -30,3 +30,6 @@ jobs:
       # Runs functional tests
       - name: Execute Functional Tests
         run: make ; ./functional-test.sh ; make fclean
+  
+      - name: Execute Tests Unitaire
+        run: make tests_run
