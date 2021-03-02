@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Tests
 
 on:
@@ -29,8 +27,6 @@ jobs:
   unit_test:
     name: Unit Test
     runs-on: ubuntu-latest
-    container:
-      image: epitechcontent/epitest-docker
 
     steps:
       - uses: actions/checkout@v2
